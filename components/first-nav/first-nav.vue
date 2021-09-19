@@ -1,0 +1,66 @@
+<template>
+	<view class="firstNav">
+		<!-- 搜索图标 -->
+		<view class="iconfont icon-sousuo icon"></view>
+		<!-- 中间选项 -->
+		<view class="middle">
+			<view class="text">
+				同城
+			</view>
+		<!-- 	<view class="text">
+				关注
+			</view> -->
+			<view class="text">
+				推荐
+			</view>
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		// 顶部导航栏组件
+		name: "first-nav",
+		data() {
+			return {
+
+			};
+		}
+	}
+</script>
+
+<style>
+	.firstNav {
+		width: 100%;
+		position: fixed;
+		top: 25px;
+		left: 0;
+		height: 35px;
+		line-height: 35px;
+		/* 水平居中 */
+		margin: 0 auto;
+		background: #000000;
+	}
+
+	/* 图标样式 */
+	.icon {
+		position: absolute;
+		top: 0;
+		/* left: 0; */
+		right: 0;
+		color: #FFFFFF;
+		width: 20%;
+		/* 居中 */
+		text-align: center;
+		font-size: 20px;
+	}
+	.middle{
+		text-align: center;
+	}
+	/* 文本样式 */
+	.text{
+		display: inline;
+		color: #FFFFFF;
+		margin: 0 10px;
+	}
+</style>

@@ -1,0 +1,30 @@
+{
+  "id": "2823801",
+  "name": "短视频",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7556165",
+      "name": "加号",
+      "font_class": "jiahao",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "5651341",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "22378768",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    }
+  ]
+}
