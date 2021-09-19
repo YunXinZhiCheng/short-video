@@ -1,0 +1,85 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 右侧图标栏样式 */
+.videoListRight {
+	width: 50px;
+	margin: 0 auto;
+}
+/* 作者头像样式 */
+.author-img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid #FFFFFF;
+}
+/* 图片样式 */
+.img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+/* 图标字体样式 */
+.right-box {
+	width: 50px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 13px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 33px;
+}
+/* 数量 */
+.number {
+	font-size: 10px;
+	text-align: center;
+	color: #FFFFFF;
+}
+/* 圆形CD */
+.round {
+	margin-top: 15px;
+}
+

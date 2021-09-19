@@ -29,3 +29,14 @@
 	color: #FFFFFF;
 }
 
+/* 右侧图标栏样式 */
+.right-box {
+	/* 层级 */
+	z-index: 20;
+	/* 定位 */
+	position: absolute;
+	right: 10px;
+	bottom: 50px;
+	color: #FFFFFF;
+}
+

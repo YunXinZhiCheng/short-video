@@ -9,8 +9,12 @@
 						<videoPlayer :video="item"></videoPlayer>
 					</view>
 					<view class="left-box">
-						<!-- 使用视频左侧信息栏组件 -->
+						<!-- 使用视频列表左侧信息栏组件 -->
 						<videoListLeft></videoListLeft>
+					</view>
+					<view class="right-box">
+						<!-- 使用视频列表右侧图标栏组件 -->
+						<videoListRight></videoListRight>
 					</view>
 				</swiper-item>
 			</swiper>
@@ -78,6 +82,17 @@
 		/* 定位 */
 		position: absolute;
 		left: 10px;
+		bottom: 50px;
+		color: #FFFFFF;
+	}
+
+	/* 右侧图标栏样式 */
+	.right-box {
+		/* 层级 */
+		z-index: 20;
+		/* 定位 */
+		position: absolute;
+		right: 10px;
 		bottom: 50px;
 		color: #FFFFFF;
 	}

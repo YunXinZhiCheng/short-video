@@ -22,9 +22,9 @@
 	/* @font-face复制阿里图标在线生成的进行覆盖 */
 @font-face {
   font-family: 'iconfont';  /* Project id 2823801 */
-  src: url('//at.alicdn.com/t/font_2823801_fcm5x8bsfl4.woff2?t=1632038340839') format('woff2'),
-       url('//at.alicdn.com/t/font_2823801_fcm5x8bsfl4.woff?t=1632038340839') format('woff'),
-       url('//at.alicdn.com/t/font_2823801_fcm5x8bsfl4.ttf?t=1632038340839') format('truetype');
+  src: url('//at.alicdn.com/t/font_2823801_h7u1ec760pu.woff2?t=1632069251278') format('woff2'),
+       url('//at.alicdn.com/t/font_2823801_h7u1ec760pu.woff?t=1632069251278') format('woff'),
+       url('//at.alicdn.com/t/font_2823801_h7u1ec760pu.ttf?t=1632069251278') format('truetype');
 }
 .iconfont {
   font-family: "iconfont" !important;
@@ -32,6 +32,15 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon-pinglun:before {
+  content: "\e67e";
+}
+.icon-fenxiang:before {
+  content: "\e621";
+}
+.icon-aixin:before {
+  content: "\e622";
 }
 .icon-jiahao:before {
   content: "\e602";

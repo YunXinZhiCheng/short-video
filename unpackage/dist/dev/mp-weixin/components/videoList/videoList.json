@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "video-player": "/components/videoPlayer/videoPlayer",
-    "video-list-left": "/components/videoListLeft/videoListLeft"
+    "video-list-left": "/components/videoListLeft/videoListLeft",
+    "video-list-right": "/components/videoListRight/videoListRight"
   },
   "component": true
 }

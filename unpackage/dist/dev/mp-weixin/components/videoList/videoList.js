@@ -83,7 +83,10 @@ try {
       return __webpack_require__.e(/*! import() | components/videoPlayer/videoPlayer */ "components/videoPlayer/videoPlayer").then(__webpack_require__.bind(null, /*! @/components/videoPlayer/videoPlayer.vue */ 46))
     },
     videoListLeft: function() {
-      return __webpack_require__.e(/*! import() | components/videoListLeft/videoListLeft */ "components/videoListLeft/videoListLeft").then(__webpack_require__.bind(null, /*! @/components/videoListLeft/videoListLeft.vue */ 59))
+      return __webpack_require__.e(/*! import() | components/videoListLeft/videoListLeft */ "components/videoListLeft/videoListLeft").then(__webpack_require__.bind(null, /*! @/components/videoListLeft/videoListLeft.vue */ 53))
+    },
+    videoListRight: function() {
+      return __webpack_require__.e(/*! import() | components/videoListRight/videoListRight */ "components/videoListRight/videoListRight").then(__webpack_require__.bind(null, /*! @/components/videoListRight/videoListRight.vue */ 60))
     }
   }
 } catch (e) {
@@ -141,6 +144,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
 //
 //
 //
