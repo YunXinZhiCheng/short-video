@@ -22,16 +22,19 @@
 		name: "videoList",
 		data() {
 			return {
-				// 视频数据
+				// 视频数据,本地路径用require(),网络路径直接填写
 				list: [{
 					id: 1,
-					src: require('static/video/video1.mp4')
+					src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video1.mp4'
 				}, {
 					id: 2,
-					src: require('static/video/video2.mp4')
+					src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video2.mp4'
 				}, {
 					id: 3,
-					src: require('static/video/video3.mp4')
+					src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video3.mp4'
+				}, {
+					id: 4,
+					src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video4.mp4'
 				}]
 			};
 		}

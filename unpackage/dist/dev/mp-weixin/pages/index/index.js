@@ -106,10 +106,10 @@ try {
       return __webpack_require__.e(/*! import() | components/first-nav/first-nav */ "components/first-nav/first-nav").then(__webpack_require__.bind(null, /*! @/components/first-nav/first-nav.vue */ 25))
     },
     videoList: function() {
-      return Promise.all(/*! import() | components/videoList/videoList */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/videoList/videoList")]).then(__webpack_require__.bind(null, /*! @/components/videoList/videoList.vue */ 32))
+      return __webpack_require__.e(/*! import() | components/videoList/videoList */ "components/videoList/videoList").then(__webpack_require__.bind(null, /*! @/components/videoList/videoList.vue */ 32))
     },
     tab: function() {
-      return __webpack_require__.e(/*! import() | components/tab/tab */ "components/tab/tab").then(__webpack_require__.bind(null, /*! @/components/tab/tab.vue */ 42))
+      return __webpack_require__.e(/*! import() | components/tab/tab */ "components/tab/tab").then(__webpack_require__.bind(null, /*! @/components/tab/tab.vue */ 39))
     }
   }
 } catch (e) {
