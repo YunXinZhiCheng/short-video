@@ -1,0 +1,1 @@
+<view class="videoPlayer"><video class="video" controls="{{true}}" loop="{{true}}" src="{{video.src}}" object-fit="contain"></video></view>

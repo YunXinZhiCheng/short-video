@@ -39,7 +39,9 @@
 		line-height: 35px;
 		/* 水平居中 */
 		margin: 0 auto;
-		background: #000000;
+		/* background: #000000; */
+		/* 层级 */
+		z-index: 20;
 	}
 
 	/* 图标样式 */

@@ -42,4 +42,8 @@
 .icon-sousuo:before {
   content: "\e646";
 }
+page,page {
+	width: 100%;
+	height: 100%;
+}
 
