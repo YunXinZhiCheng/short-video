@@ -81,6 +81,9 @@ try {
   components = {
     videoPlayer: function() {
       return __webpack_require__.e(/*! import() | components/videoPlayer/videoPlayer */ "components/videoPlayer/videoPlayer").then(__webpack_require__.bind(null, /*! @/components/videoPlayer/videoPlayer.vue */ 46))
+    },
+    videoListLeft: function() {
+      return __webpack_require__.e(/*! import() | components/videoListLeft/videoListLeft */ "components/videoListLeft/videoListLeft").then(__webpack_require__.bind(null, /*! @/components/videoListLeft/videoListLeft.vue */ 59))
     }
   }
 } catch (e) {
@@ -155,6 +158,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
 var _default =
 {
   // 视频列表组件
@@ -174,6 +181,7 @@ var _default =
       {
         id: 4,
         src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video4.mp4' }] };
+
 
 
   } };exports.default = _default;

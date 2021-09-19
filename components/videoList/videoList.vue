@@ -8,6 +8,10 @@
 						<!-- 使用视频播放组件 -->
 						<videoPlayer :video="item"></videoPlayer>
 					</view>
+					<view class="left-box">
+						<!-- 使用视频左侧信息栏组件 -->
+						<videoListLeft></videoListLeft>
+					</view>
 				</swiper-item>
 			</swiper>
 		</view>
@@ -35,9 +39,11 @@
 				}, {
 					id: 4,
 					src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video4.mp4'
-				}]
+				}],
+
 			};
-		}
+		},
+
 	}
 </script>
 
@@ -63,5 +69,16 @@
 		height: 100vh;
 		/* 层级 */
 		z-index: 19;
+	}
+
+	/* 左侧信息栏样式 */
+	.left-box {
+		/* 层级 */
+		z-index: 20;
+		/* 定位 */
+		position: absolute;
+		left: 10px;
+		bottom: 50px;
+		color: #FFFFFF;
 	}
 </style>

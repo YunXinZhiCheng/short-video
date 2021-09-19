@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/first-nav/first-nav":1,"components/tab/tab":1,"components/videoList/videoList":1,"components/videoPlayer/videoPlayer":1};
+/******/ 		var cssChunks = {"components/first-nav/first-nav":1,"components/tab/tab":1,"components/videoList/videoList":1,"components/videoListLeft/videoListLeft":1,"components/videoPlayer/videoPlayer":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/first-nav/first-nav":"components/first-nav/first-nav","components/tab/tab":"components/tab/tab","components/videoList/videoList":"components/videoList/videoList","components/videoPlayer/videoPlayer":"components/videoPlayer/videoPlayer"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/first-nav/first-nav":"components/first-nav/first-nav","components/tab/tab":"components/tab/tab","components/videoList/videoList":"components/videoList/videoList","components/videoListLeft/videoListLeft":"components/videoListLeft/videoListLeft","components/videoPlayer/videoPlayer":"components/videoPlayer/videoPlayer"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

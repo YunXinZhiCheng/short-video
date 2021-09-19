@@ -18,3 +18,14 @@
 	z-index: 19;
 }
 
+/* 左侧信息栏样式 */
+.left-box {
+	/* 层级 */
+	z-index: 20;
+	/* 定位 */
+	position: absolute;
+	left: 10px;
+	bottom: 50px;
+	color: #FFFFFF;
+}
+
