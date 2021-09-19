@@ -3,7 +3,12 @@
 		<!-- 作者+标题+音乐 -->
 		<view class="author">作者</view>
 		<view class="title">标题</view>
-		<view class="music">音乐</view>
+		<view class="box">
+			<view class="music">
+				@Hello fans Are You Ok?
+			</view>
+		</view>
+
 	</view>
 </template>
 
@@ -43,10 +48,30 @@
 		font-size: 12px;
 	}
 
+	/* 音乐盒子 */
+	.box {
+		width: 100px;
+		/* 内容超出盒子大小就隐藏 */
+		overflow: hidden;
+	}
+
 	/* 音乐 */
 	.music {
+		width: 150px;
 		height: 35px;
 		line-height: 35px;
 		font-size: 12px;
+		animation: music 4s linear 0.2s infinite;
+	}
+
+	/* 音乐 滚动动画: 水平移动,x轴 */
+	@keyframes music {
+		0% {
+			transform: translate3d(80%, 0, 0);
+		}
+
+		100% {
+			transform: translate3d(-80%, 0, 0);
+		}
 	}
 </style>

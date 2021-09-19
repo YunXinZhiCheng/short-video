@@ -86,5 +86,19 @@
 	/* 圆形CD */
 	.round {
 		margin-top: 15px;
+		animation: rotate 1.5s linear 0.2s infinite;
+		width: 50px;
+		height: 50px;
+	}
+
+	/* 圆形CD 旋转动画 一圈 0到360度  */
+	@keyframes rotate {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(360deg);
+		}
 	}
 </style>

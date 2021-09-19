@@ -1,1 +1,1 @@
-<view class="videoListLeft"><view class="author">作者</view><view class="title">标题</view><view class="music">音乐</view></view>
+<view class="videoListLeft"><view class="author">作者</view><view class="title">标题</view><view class="box"><view class="music">@Hello fans Are You Ok?</view></view></view>
