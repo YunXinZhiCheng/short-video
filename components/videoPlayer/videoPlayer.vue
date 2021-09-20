@@ -45,7 +45,7 @@
 						}
 					} else {
 						// 双击
-						console.log('双击666')
+						// console.log('双击666')
 						// 子传父
 						this.$emit('changeClick')
 					}
@@ -58,7 +58,7 @@
 			// 视频播放方法
 			player() {
 				if (this.play === false) {
-					console.log('player播放')
+					// console.log('player播放')
 					this.videoContext.seek(0) // 从0开始从头播放
 					this.videoContext.play()
 					this.play = true
@@ -67,7 +67,7 @@
 			// 视频暂停方法
 			pause() {
 				if (this.play === true) {
-					console.log('pause暂停')
+					// console.log('pause暂停')
 					this.videoContext.pause()
 					this.play = false
 				}

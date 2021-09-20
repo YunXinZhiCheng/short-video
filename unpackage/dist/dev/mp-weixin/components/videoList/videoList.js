@@ -238,7 +238,7 @@ var time = null;var _default =
   methods: {
     // 改变事件 双击
     changeClick: function changeClick() {
-      console.log('子传父666');
+      // console.log('子传父666')
       // 点赞操作，调用子组件方法videoListRight
       this.$refs.right[0].change();
 
@@ -249,14 +249,14 @@ var time = null;var _default =
       clearTimeout(time);
 
       // 当前视频索引 current从0开始
-      console.log(res.detail.current);
+      // console.log(res.detail.current)
       this.page = res.detail.current;
 
       // 设置定时器
       time = setTimeout(function () {
         // 判断是向上还是向下滑动
         if (_this.pageStartY < _this.pageEndY) {
-          console.log('向下滑动');
+          // console.log('向下滑动')
 
           // 获取DOM节点内容 $refs
           _this.$refs.player[_this.page].player(); // 播放当前视频
@@ -266,7 +266,7 @@ var time = null;var _default =
           _this.pageStartY = 0;
           _this.pageEndY = 0;
         } else {
-          console.log('向上滑动');
+          // console.log('向上滑动')
 
           // 获取DOM节点内容 $refs
           _this.$refs.player[_this.page].player(); // 播放当前视频
