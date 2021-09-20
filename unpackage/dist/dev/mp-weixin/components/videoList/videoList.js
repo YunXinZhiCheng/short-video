@@ -176,6 +176,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
 
 // 定义一个定时器
 var time = null;var _default =
@@ -192,12 +193,15 @@ var time = null;var _default =
       {
         id: 2,
         src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video2.mp4' },
+
       {
         id: 3,
         src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video3.mp4' },
+
       {
         id: 4,
         src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video4.mp4' }],
+
 
 
       // 页面开始与结束纵向距离
@@ -210,6 +214,13 @@ var time = null;var _default =
   },
 
   methods: {
+    // 改变事件 双击
+    changeClick: function changeClick() {
+      console.log('子传父666');
+      // 点赞操作，调用子组件方法videoListRight
+      this.$refs.right[0].change();
+
+    },
     // 改变事件
     change: function change(res) {var _this = this;
       // 移除定时器
@@ -243,7 +254,7 @@ var time = null;var _default =
           _this.pageStartY = 0;
           _this.pageEndY = 0;
         }
-      }, 1);
+      }, 100);
 
     },
     // 开始触摸事件

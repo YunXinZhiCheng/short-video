@@ -59,6 +59,10 @@
 			changeColor() {
 				// console.log('change颜色')
 				this.initColor = this.initColor === 'white' ? 'red' : 'white'
+			},
+			// 点赞：改变颜色事件
+			change() {
+				this.initColor = "red"
 			}
 		}
 	}

@@ -11,9 +11,10 @@
 				<swiper-item v-for="item in list" :key="item.id">
 					<view class="swiper-item " style="color: #000000;">
 						<!-- 使用视频播放组件
-						     父传子：
+						     父传子：绑定属性
+							 子传父：自定义事件
 						 -->
-						<videoPlayer :video="item" ref="player"></videoPlayer>
+						<videoPlayer :video="item" ref="player" @changeClick="changeClick"></videoPlayer>
 					</view>
 					<view class="left-box">
 						<!-- 使用视频列表左侧信息栏组件 -->
@@ -21,7 +22,7 @@
 					</view>
 					<view class="right-box">
 						<!-- 使用视频列表右侧图标栏组件 -->
-						<videoListRight></videoListRight>
+						<videoListRight ref="right"></videoListRight>
 					</view>
 				</swiper-item>
 			</swiper>
@@ -42,18 +43,21 @@
 			return {
 				// 视频数据,本地路径用require(),网络路径直接填写
 				list: [{
-					id: 1,
-					src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video1.mp4'
-				}, {
-					id: 2,
-					src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video2.mp4'
-				}, {
-					id: 3,
-					src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video3.mp4'
-				}, {
-					id: 4,
-					src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video4.mp4'
-				}],
+						id: 1,
+						src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video1.mp4'
+					}, {
+						id: 2,
+						src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video2.mp4'
+					},
+					{
+						id: 3,
+						src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video3.mp4'
+					},
+					{
+						id: 4,
+						src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video4.mp4'
+					}
+				],
 
 				// 页面开始与结束纵向距离
 				pageStartY: 0,
@@ -65,6 +69,13 @@
 		},
 
 		methods: {
+			// 改变事件 双击
+			changeClick() {
+				console.log('子传父666')
+				// 点赞操作，调用子组件方法videoListRight
+				this.$refs.right[0].change()
+
+			},
 			// 改变事件
 			change(res) {
 				// 移除定时器
@@ -98,7 +109,7 @@
 						this.pageStartY = 0
 						this.pageEndY = 0
 					}
-				}, 1)
+				}, 100)
 
 			},
 			// 开始触摸事件

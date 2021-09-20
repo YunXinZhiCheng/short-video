@@ -121,7 +121,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-var _default =
+
+// 定义一个定时器
+var timer = null;var _default =
+
 {
   // 视频播放组件
   name: "videoPlayer",
@@ -130,7 +133,9 @@ var _default =
   data: function data() {
     return {
       // 播放状态
-      play: false };
+      play: false,
+      // 双击
+      dbClick: false };
 
   },
   // 生命周期函数
@@ -139,12 +144,29 @@ var _default =
   },
   methods: {
     // 点击事件
-    click: function click() {
-      if (this.play === false) {// 非播放状态 就让其播放
-        this.playCurrent();
-      } else {// 播放状态 就让其暂停
-        this.pause();
-      }
+    click: function click() {var _this = this;
+      // 移出定时器
+      clearTimeout(timer);
+      this.dbClick = !this.dbClick;
+      timer = setTimeout(function () {
+        if (_this.dbClick) {
+          // 单击
+          if (_this.play === false) {// 非播放状态 就让其播放
+            _this.playCurrent();
+          } else {// 播放状态 就让其暂停
+            _this.pause();
+          }
+        } else {
+          // 双击
+          console.log('双击666');
+          // 子传父
+          _this.$emit('changeClick');
+        }
+        // 重置点击状态
+        _this.dbClick = false;
+
+      }, 300);
+
     },
     // 视频播放方法
     player: function player() {
