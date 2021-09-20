@@ -169,7 +169,17 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
-var _default =
+//
+//
+//
+//
+//
+//
+//
+
+// 定义一个定时器
+var time = null;var _default =
+
 {
   // 视频列表组件
   name: "videoList",
@@ -187,11 +197,69 @@ var _default =
         src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video3.mp4' },
       {
         id: 4,
-        src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video4.mp4' }] };
+        src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video4.mp4' }],
 
 
+      // 页面开始与结束纵向距离
+      pageStartY: 0,
+      pageEndY: 0,
+      // 页面初始索引
+      page: 0 };
 
-  } };exports.default = _default;
+
+  },
+
+  methods: {
+    // 改变事件
+    change: function change(res) {var _this = this;
+      // 移除定时器
+      clearTimeout(time);
+
+      // 当前视频索引 current从0开始
+      console.log(res.detail.current);
+      this.page = res.detail.current;
+
+      // 设置定时器
+      time = setTimeout(function () {
+        // 判断是向上还是向下滑动
+        if (_this.pageStartY < _this.pageEndY) {
+          console.log('向下滑动');
+
+          // 获取DOM节点内容 $refs
+          _this.$refs.player[_this.page].player(); // 播放当前视频
+          _this.$refs.player[_this.page + 1].pause(); // 暂停下一个视频
+
+          // 滑动之后清空距离
+          _this.pageStartY = 0;
+          _this.pageEndY = 0;
+        } else {
+          console.log('向上滑动');
+
+          // 获取DOM节点内容 $refs
+          _this.$refs.player[_this.page].player(); // 播放当前视频
+          _this.$refs.player[_this.page - 1].pause(); // 暂停上一个视频
+
+          // 滑动之后清空距离
+          _this.pageStartY = 0;
+          _this.pageEndY = 0;
+        }
+      }, 1);
+
+    },
+    // 开始触摸事件
+    touchStart: function touchStart(res) {
+      // console.log(res)
+      this.pageStartY = res.changedTouches[0].pageY; // 赋值给开始触摸纵向距离
+      // console.log(this.pageStartY)
+
+
+    },
+    // 结束触摸事件
+    touchEnd: function touchEnd(res) {
+      // console.log(res)
+      this.pageEndY = res.changedTouches[0].pageY; // 赋值给结束触摸纵向距离
+      // console.log(this.pageEndY)
+    } } };exports.default = _default;
 
 /***/ }),
 

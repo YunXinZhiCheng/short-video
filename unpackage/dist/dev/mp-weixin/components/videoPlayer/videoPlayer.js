@@ -114,8 +114,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
 //
 //
 //
@@ -132,7 +131,24 @@ var _default =
     return {};
 
 
-  } };exports.default = _default;
+  },
+  // 生命周期函数
+  mounted: function mounted() {
+    this.videoContext = uni.createVideoContext('myVideo', this);
+  },
+  methods: {
+    // 视频播放方法
+    player: function player() {
+      console.log('player播放');
+      this.videoContext.seek(0); // 从0开始从头播放
+      this.videoContext.play();
+    },
+    // 视频暂停方法
+    pause: function pause() {
+      console.log('pause暂停');
+      this.videoContext.pause();
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

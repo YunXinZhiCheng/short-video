@@ -4,9 +4,16 @@
 		<view class="author-img">
 			<image class="img" src="../../static/images/author1.jpg" mode="">
 				</imgage>
+				<!-- 关注图标
+					事件：点击后隐藏图标
+					指令：v-show 优先使用
+				 -->
+				<view class="iconfont icon-jiahao add" v-show="show" @click="hidden"></view>
 		</view>
-		<!-- 收藏图标 -->
-		<view class="iconfont icon-aixin right-box">
+		<!-- 收藏图标 爱心
+		     事件：点击收藏会改变颜色
+		 -->
+		<view class="iconfont icon-aixin right-box" :style="{ color: initColor }" @click="changeColor">
 
 		</view>
 
@@ -37,8 +44,22 @@
 		name: "videoListRight",
 		data() {
 			return {
-
+				show: true, // 显示与隐藏
+				initColor: 'white' // 默认颜色
 			};
+		},
+		methods: {
+			// 关注：隐藏事件
+			hidden() {
+				// console.log('hidden隐藏')
+				this.show = false
+
+			},
+			// 收藏：改变颜色事件,三元运算符判断
+			changeColor() {
+				// console.log('change颜色')
+				this.initColor = this.initColor === 'white' ? 'red' : 'white'
+			}
 		}
 	}
 </script>
@@ -56,6 +77,8 @@
 		height: 50px;
 		border-radius: 50%;
 		border: 2px solid #FFFFFF;
+		/* 相对定位，为了关注图标 */
+		position: relative;
 	}
 
 	/* 图片样式 */
@@ -63,6 +86,24 @@
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
+	}
+
+	/* 关注加号图标样式 */
+	.add {
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		background: red;
+		/* 绝对定位: 向上与向左移动 */
+		position: absolute;
+		bottom: -9px;
+		left: 16px;
+		/* 水平与垂直居中 */
+		text-align: center;
+		line-height: 18px;
+		/* 图标字体 */
+		color: #FFFFFF;
+		font-size: 10px;
 	}
 
 	/* 图标字体样式 */

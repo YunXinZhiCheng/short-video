@@ -44,6 +44,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 右侧图标栏样式 */
 .videoListRight {
 	width: 50px;
@@ -55,12 +76,31 @@
 	height: 50px;
 	border-radius: 50%;
 	border: 2px solid #FFFFFF;
+	/* 相对定位，为了关注图标 */
+	position: relative;
 }
 /* 图片样式 */
 .img {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
+}
+/* 关注加号图标样式 */
+.add {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background: red;
+	/* 绝对定位: 向上与向左移动 */
+	position: absolute;
+	bottom: -9px;
+	left: 16px;
+	/* 水平与垂直居中 */
+	text-align: center;
+	line-height: 18px;
+	/* 图标字体 */
+	color: #FFFFFF;
+	font-size: 10px;
 }
 /* 图标字体样式 */
 .right-box {

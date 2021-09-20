@@ -147,15 +147,35 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   // 视频列表右侧图标栏组件
   name: "videoListRight",
   data: function data() {
-    return {};
+    return {
+      show: true, // 显示与隐藏
+      initColor: 'white' // 默认颜色
+    };
+  },
+  methods: {
+    // 关注：隐藏事件
+    hidden: function hidden() {
+      // console.log('hidden隐藏')
+      this.show = false;
 
-
-  } };exports.default = _default;
+    },
+    // 收藏：改变颜色事件,三元运算符判断
+    changeColor: function changeColor() {
+      // console.log('change颜色')
+      this.initColor = this.initColor === 'white' ? 'red' : 'white';
+    } } };exports.default = _default;
 
 /***/ }),
 
