@@ -128,8 +128,9 @@ var _default =
   // 接收属性
   props: ['video'],
   data: function data() {
-    return {};
-
+    return {
+      // 播放状态
+      play: false };
 
   },
   // 生命周期函数
@@ -137,16 +138,38 @@ var _default =
     this.videoContext = uni.createVideoContext('myVideo', this);
   },
   methods: {
+    // 点击事件
+    click: function click() {
+      if (this.play === false) {// 非播放状态 就让其播放
+        this.playCurrent();
+      } else {// 播放状态 就让其暂停
+        this.pause();
+      }
+    },
     // 视频播放方法
     player: function player() {
-      console.log('player播放');
-      this.videoContext.seek(0); // 从0开始从头播放
-      this.videoContext.play();
+      if (this.play === false) {
+        console.log('player播放');
+        this.videoContext.seek(0); // 从0开始从头播放
+        this.videoContext.play();
+        this.play = true;
+      }
     },
     // 视频暂停方法
     pause: function pause() {
-      console.log('pause暂停');
-      this.videoContext.pause();
+      if (this.play === true) {
+        console.log('pause暂停');
+        this.videoContext.pause();
+        this.play = false;
+      }
+
+    },
+    // 当前视频播放
+    playCurrent: function playCurrent() {
+      if (this.play === false) {
+        this.videoContext.play();
+        this.play = true;
+      }
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
