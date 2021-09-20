@@ -150,14 +150,11 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
-//
-//
-//
-//
 var _default =
 {
   // 视频列表右侧图标栏组件
   name: "videoListRight",
+  props: ['item'],
   data: function data() {
     return {
       show: true, // 显示与隐藏

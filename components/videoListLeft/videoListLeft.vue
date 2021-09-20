@@ -1,8 +1,8 @@
 <template>
 	<view class="videoListLeft">
 		<!-- 作者+标题+音乐 -->
-		<view class="author">作者</view>
-		<view class="title">标题</view>
+		<view class="author">{{item.author}}</view>
+		<view class="title">{{item.title}}</view>
 		<view class="box">
 			<view class="music">
 				@Hello fans Are You Ok?
@@ -16,6 +16,7 @@
 	export default {
 		// 视频列表左侧信息栏组件
 		name: "videoListLeft",
+		props: ['item'],
 		data() {
 			return {
 

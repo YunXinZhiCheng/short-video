@@ -132,6 +132,7 @@ var _default =
 {
   // 视频列表左侧信息栏组件
   name: "videoListLeft",
+  props: ['item'],
   data: function data() {
     return {};
 

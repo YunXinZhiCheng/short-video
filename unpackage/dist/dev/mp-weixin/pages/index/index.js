@@ -182,40 +182,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 var _default =
 {
   data: function data() {
-    return {
-      // 本地数据
-      list: [{
-        "id": 1,
-        "src": "",
-        "author": "张三",
-        "title": "深圳",
-        "loveNumber": 123,
-        "commentNumber": 222,
-        "shareNumber": 333 },
-      {
-        "id": 2,
-        "src": "",
-        "author": "李四",
-        "title": "深圳地标",
-        "loveNumber": 223,
-        "commentNumber": 444,
-        "shareNumber": 555 },
-      {
-        "id": 3,
-        "src": "",
-        "author": "王五",
-        "title": "深圳购物",
-        "loveNumber": 323,
-        "commentNumber": 666,
-        "shareNumber": 666 },
-      {
-        "id": 4,
-        "src": "",
-        "author": "赵六",
-        "title": "深圳建筑",
-        "loveNumber": 423,
-        "commentNumber": 777,
-        "shareNumber": 777 }] };
+    return {};
 
 
   },

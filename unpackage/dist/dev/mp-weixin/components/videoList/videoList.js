@@ -187,20 +187,42 @@ var time = null;var _default =
   data: function data() {
     return {
       // 视频数据,本地路径用require(),网络路径直接填写
-      list: [{
-        id: 1,
-        src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video1.mp4' },
+      "list": [{
+        "id": 1,
+        "src": "https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video1.mp4",
+        "author": "张三",
+        "authorImg": "https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/author1.jpg",
+        "title": "深圳房子",
+        "loveNumber": 123,
+        "commentNumber": 222,
+        "shareNumber": 333 },
       {
-        id: 2,
-        src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video2.mp4' },
-
+        "id": 2,
+        "src": "https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video2.mp4",
+        "author": "李四",
+        "authorImg": "https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/author2.jpg",
+        "title": "深圳地标",
+        "loveNumber": 223,
+        "commentNumber": 444,
+        "shareNumber": 555 },
       {
-        id: 3,
-        src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video3.mp4' },
-
+        "id": 3,
+        "src": "https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video3.mp4",
+        "author": "王五",
+        "authorImg": "https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/author3.jpg",
+        "title": "深圳购物中心",
+        "loveNumber": 323,
+        "commentNumber": 666,
+        "shareNumber": 666 },
       {
-        id: 4,
-        src: 'https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video4.mp4' }],
+        "id": 4,
+        "src": "https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/video4.mp4",
+        "author": "雷军",
+        "authorImg": "https://luoyuancheng-1303025190.cos.ap-hongkong.myqcloud.com/shortvideo/author4.jpg",
+        "title": "小米机器人铁蛋",
+        "loveNumber": 423,
+        "commentNumber": 777,
+        "shareNumber": 777 }],
 
 
 

@@ -1,6 +1,7 @@
 <template>
 	<view class="videoPlayer">
-		<video id="myVideo" class="video" :controls="false" :loop="true" :src="video.src" @click="click">
+		<video id="myVideo" class="video" :controls="false" :loop="true" :src="video.src" @click="click"
+			:autoplay="autoplay">
 		</video>
 	</view>
 </template>
@@ -19,7 +20,9 @@
 				// 播放状态
 				play: false,
 				// 双击
-				dbClick: false
+				dbClick: false,
+				// 自动播放
+				autoplay: false
 			};
 		},
 		// 生命周期函数

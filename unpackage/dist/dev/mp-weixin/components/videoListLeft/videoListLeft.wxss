@@ -25,6 +25,7 @@
 
 
 
+
 /* 视频列表左侧信息栏样式 */
 .videoListLeft {
 	width: 150px;

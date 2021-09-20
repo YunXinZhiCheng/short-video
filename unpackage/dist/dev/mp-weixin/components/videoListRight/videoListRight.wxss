@@ -66,9 +66,6 @@
 
 
 
-
-
-
 /* 右侧图标栏样式 */
 .videoListRight {
 	width: 50px;

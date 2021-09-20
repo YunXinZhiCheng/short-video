@@ -2,7 +2,7 @@
 	<view class="videoListRight">
 		<!-- 作者头像 -->
 		<view class="author-img">
-			<image class="img" src="../../static/images/author1.jpg" mode="">
+			<image class="img" :src="item.authorImg" mode="">
 				</imgage>
 				<!-- 关注图标
 					事件：点击后隐藏图标
@@ -13,23 +13,19 @@
 		<!-- 收藏图标 爱心
 		     事件：点击收藏会改变颜色
 		 -->
-		<view class="iconfont icon-aixin right-box" :style="{ color: initColor }" @click="changeColor">
-
-		</view>
+		<view class="iconfont icon-aixin right-box" :style="{ color: initColor }" @click="changeColor"></view>
+		<!-- 收藏数量 -->
+		<view class="number">{{item.loveNumber}}</view>
 
 		<!-- 评论 -->
-		<view class="iconfont icon-pinglun right-box">
-
-		</view>
+		<view class="iconfont icon-pinglun right-box"></view>
 		<!-- 评论数量 -->
-		<view class="number">123</view>
+		<view class="number">{{item.commentNumber}}</view>
 
 		<!-- 分享 -->
-		<view class=" iconfont icon-fenxiang right-box">
-
-		</view>
+		<view class=" iconfont icon-fenxiang right-box"></view>
 		<!-- 分享数量 -->
-		<view class="number">223</view>
+		<view class="number">{{item.shareNumber}}</view>
 
 		<!-- 动画圆形CD -->
 		<view class="round">
@@ -42,6 +38,7 @@
 	export default {
 		// 视频列表右侧图标栏组件
 		name: "videoListRight",
+		props: ['item'],
 		data() {
 			return {
 				show: true, // 显示与隐藏

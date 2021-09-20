@@ -121,6 +121,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 // 定义一个定时器
 var timer = null;var _default =
@@ -135,7 +136,9 @@ var timer = null;var _default =
       // 播放状态
       play: false,
       // 双击
-      dbClick: false };
+      dbClick: false,
+      // 自动播放
+      autoplay: false };
 
   },
   // 生命周期函数
