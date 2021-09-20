@@ -1,9 +1,8 @@
-/* @font-face复制阿里图标在线生成的进行覆盖 */
 @font-face {
   font-family: 'iconfont';  /* Project id 2823801 */
-  src: url('//at.alicdn.com/t/font_2823801_h7u1ec760pu.woff2?t=1632069251278') format('woff2'),
-       url('//at.alicdn.com/t/font_2823801_h7u1ec760pu.woff?t=1632069251278') format('woff'),
-       url('//at.alicdn.com/t/font_2823801_h7u1ec760pu.ttf?t=1632069251278') format('truetype');
+  src: url('//at.alicdn.com/t/font_2823801_k3rh8vq6kh.woff2?t=1632147367831') format('woff2'),
+       url('//at.alicdn.com/t/font_2823801_k3rh8vq6kh.woff?t=1632147367831') format('woff'),
+       url('//at.alicdn.com/t/font_2823801_k3rh8vq6kh.ttf?t=1632147367831') format('truetype');
 }
 
 .iconfont {
@@ -12,6 +11,14 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dingwei:before {
+  content: "\e629";
+}
+
+.icon-qiehuan:before {
+  content: "\e605";
 }
 
 .icon-pinglun:before {

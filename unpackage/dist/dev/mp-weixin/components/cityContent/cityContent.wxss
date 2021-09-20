@@ -1,0 +1,138 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 城市内容的样式 */
+.cityContent {
+	width: 100%;
+	background: #000000;
+}
+/* 城市定位 */
+.conlation {
+	width: 100%;
+	height: 40px;
+	padding-top: 70px;
+	overflow: hidden;
+	color: #AAAAAA;
+}
+/* 左侧定位 */
+.conlation-left {
+	float: left;
+	font-size: 13px;
+	padding-left: 15px;
+}
+/* 右侧切换 */
+.conlation-right {
+	float: right;
+	font-size: 13px;
+	padding-right: 15px;
+}
+/* 视频列表 */
+.videoList {
+	width: 100%;
+	overflow: hidden;
+	background: #000000;
+}
+/* 视频列表项 */
+.item {
+	width: 50%;
+	float: left;
+	position: relative;
+}
+/* 视频 */
+.video {
+	width: 92%;
+	height: 300px;
+	margin-left: 4px;
+	z-index: 18;
+}
+/* 头像 */
+.img {
+	position: absolute;
+	bottom: 7px;
+	right: 15px;
+}
+.image-box {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+

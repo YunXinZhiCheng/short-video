@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "usingComponents": {
+    "first-nav": "/components/first-nav/first-nav",
+    "city-content": "/components/cityContent/cityContent",
+    "tab": "/components/tab/tab"
+  }
+}

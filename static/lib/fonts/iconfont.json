@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "8765144",
+      "name": "定位",
+      "font_class": "dingwei",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "16383623",
+      "name": "切换",
+      "font_class": "qiehuan",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
       "icon_id": "6660767",
       "name": "评论",
       "font_class": "pinglun",
